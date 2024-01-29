@@ -40,7 +40,7 @@
         };
 
         shortcuts {
-            bindings = <&sl 7>;
+            bindings = <&sl 5>;
             key-positions = <12 13>;
         };
 
@@ -216,7 +216,7 @@
        &as W  &as L  &as Y               &as P      &as B          &as Z           &as F            &as O         &as U    &as APOSTROPHE
        &as C  &as R  &as S               &as T      &as G          &as M           &as N            &as E         &as I    &as A
 &to 0  &as Q  &as J  &as V               &as D      &as K          &as X           &as H            &as COMMA     &as DOT  &as FSLH        &as SEMICOLON
-                     &caps_hold LSHFT 0  &lt 3 TAB  &lt 2 SPACE    &repeat_mo 4 0  &lt 5 BACKSPACE  &lt 7 DELETE
+                     &caps_hold LSHFT 0  &lt 3 TAB  &lt 2 SPACE    &repeat_mo 4 0  &lt 7 BACKSPACE  &lt 5 DELETE
             >;
         };
 
@@ -253,15 +253,15 @@
             label = "SYMC";
         };
 
-        numblock {
+        shortcuts {
             bindings = <
-       &kp COLON  &kp N7  &kp N8  &kp N9      &mt KP_DIVIDE KP_MULTIPLY    &none          &none      &none      &none     &none
-       &none      &kp N4  &kp N5  &kp N6      &mt KP_SUBTRACT KP_PLUS      &kp BACKSPACE  &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI
-&none  &euro      &kp N1  &kp N2  &kp N3      &none                        &kp DELETE     &none      &none      &none     &none     &none
-                          &kp N0  &kp KP_DOT  &lt 6 SPACE                  &none          &none      &none
+       &none      &none      &kp LC(W)  &none      &none            &none  &none      &none      &none     &none
+       &kp LC(Z)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(F)        &none  &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI
+&none  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none            &none  &none      &none      &none     &none     &none
+                             &none      &none      &kp LA(LS(V))    &none  &none      &none
             >;
 
-            label = "numb";
+            label = "shortcuts";
         };
 
         numfunctions {
@@ -275,15 +275,15 @@
             label = "numf";
         };
 
-        shortcuts {
+        numblock {
             bindings = <
-       &none      &kp LC(W)  &none      &kp LC(R)  &kp LC(T)        &none  &none      &none      &none     &none
-       &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(K)        &none  &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI
-&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)        &none  &none      &none      &none     &none     &none
-                             &none      &none      &kp LA(LS(V))    &none  &none      &none
+       &kp COLON  &kp N7  &kp N8  &kp N9      &mt KP_DIVIDE KP_MULTIPLY    &none          &none      &none      &none     &none
+       &none      &kp N4  &kp N5  &kp N6      &mt KP_SUBTRACT KP_PLUS      &kp BACKSPACE  &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI
+&none  &euro      &kp N1  &kp N2  &kp N3      &none                        &kp DELETE     &none      &none      &none     &none     &none
+                          &kp N0  &kp KP_DOT  &lt 6 SPACE                  &none          &none      &none
             >;
 
-            label = "shortcuts";
+            label = "numb";
         };
     };
 };
