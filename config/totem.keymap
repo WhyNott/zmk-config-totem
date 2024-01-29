@@ -58,6 +58,11 @@
             bindings = <&sl 0>;
             key-positions = <12 11>;
         };
+
+        StS {
+            bindings = <&tog 8>;
+            key-positions = <20 31>;
+        };
     };
 
     macros {
@@ -284,6 +289,15 @@
             >;
 
             label = "numb";
+        };
+
+        StS {
+            bindings = <
+        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans
+&trans  &kp X         &kp A         &kp D         &kp S         &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &kp M         &kp E           &trans  &trans  &trans
+            >;
         };
     };
 };
