@@ -238,9 +238,9 @@
 
         navigation {
             bindings = <
-       &none     &none     &none      &none      &none    &kp K_REDO  &kp HOME  &kp UP         &kp END      &kp PRINTSCREEN
-       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &kp K_UNDO  &kp LEFT  &kp DOWN       &kp RIGHT    &kp K_COPY
-&none  &none     &none     &none      &none      &none    &none       &none     &kp PAGE_DOWN  &kp PAGE_UP  &kp K_CUT        &kp K_PASTE
+       &none     &none     &none      &none      &none    &kp K_REDO  &kp HOME  &kp UP       &kp END        &kp PRINTSCREEN
+       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &kp K_UNDO  &kp LEFT  &kp DOWN     &kp RIGHT      &kp K_COPY
+&none  &none     &none     &none      &none      &none    &none       &none     &kp PAGE_UP  &kp PAGE_DOWN  &kp K_CUT        &kp K_PASTE
                            &none      &none      &none    &kp RET     &kp BSPC  &kp DELETE
             >;
 
