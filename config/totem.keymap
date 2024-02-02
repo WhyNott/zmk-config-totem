@@ -216,7 +216,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MINUS_EM_DASH";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <160>;
             bindings = <&em_dash>, <&kp>;
 
             flavor = "tap-preferred";
