@@ -118,6 +118,19 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
+        em_dash: em_dash {
+            compatible = "zmk,behavior-macro";
+            label = "EM_DASH";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
     };
 
     behaviors {
@@ -227,10 +240,10 @@
 
         sym_type {
             bindings = <
-       &none     &none     &none      &none      &kp TAB      &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp AT_SIGN      &euro          &kp PERCENT
-       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp MINUS       &kp SQT            &kp EXCLAMATION  &kp QUESTION   &kp COLON
-&none  &none     &none     &none      &none      &kp ENTER    &kp TILDE       &kp GRAVE          &kp HASH         &kp AMPERSAND  &kp ASTERISK  &none
-                           &none      &none      &none        &kp SPACE       &kp BACKSPACE      &kp DELETE
+       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET  &kp PERCENT
+       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &em_dash          &kp EXCLAMATION  &kp QUESTION       &kp COLON
+&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &kp AMPERSAND      &euro        &none
+                           &none      &none      &none        &kp SPACE    &kp BACKSPACE     &kp DELETE
             >;
 
             label = "SYMT";
