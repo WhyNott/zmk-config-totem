@@ -211,6 +211,16 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
         };
+
+        minus_em_dash: minus_em_dash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MINUS_EM_DASH";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            bindings = <&em_dash>, <&kp>;
+
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -240,10 +250,10 @@
 
         sym_type {
             bindings = <
-       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET  &kp PERCENT
-       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &em_dash          &kp EXCLAMATION  &kp QUESTION       &kp COLON
-&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &kp AMPERSAND      &euro        &none
-                           &none      &none      &none        &kp SPACE    &kp BACKSPACE     &kp DELETE
+       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET        &kp ASTERISK     &kp RIGHT_BRACKET  &kp PERCENT
+       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &minus_em_dash 0 MINUS  &kp EXCLAMATION  &kp QUESTION       &kp COLON
+&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE               &kp UNDERSCORE   &kp AMPERSAND      &euro        &none
+                           &none      &none      &none        &kp SPACE    &kp BACKSPACE           &kp DELETE
             >;
 
             label = "SYMT";
