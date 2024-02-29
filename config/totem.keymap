@@ -221,6 +221,16 @@
 
             flavor = "tap-preferred";
         };
+
+        emdash: emdash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EMDASH";
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            bindings = <&em_dash>, <&kp>;
+
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -250,9 +260,9 @@
 
         sym_type {
             bindings = <
-       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET  &kp PERCENT
-       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &slash 0 MINUS    &kp EXCLAMATION  &kp QUESTION       &kp COLON
-&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &kp AMPERSAND      &euro        &none
+       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET      &kp PERCENT
+       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &emdash 0 MINUS   &kp EXCLAMATION  &kp QUESTION           &kp COLON
+&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &hmr_r PLUS AMPERSAND  &euro        &none
                            &none      &none      &none        &kp SPACE    &kp BACKSPACE     &kp DELETE
             >;
 
@@ -263,7 +273,7 @@
             bindings = <
        &none     &none     &none      &none      &none    &kp K_REDO  &kp PG_UP  &kp UP      &kp PG_DN  &kp PRINTSCREEN
        &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &kp K_UNDO  &kp LEFT   &kp DOWN    &kp RIGHT  &kp K_COPY
-&none  &none     &none     &none      &none      &none    &none       &none      &kp HOME    &kp END    &kp K_CUT        &kp K_PASTE
+&none  &none     &none     &none      &none      &none    &none       &kp HOME   &kp DOWN    &kp END    &kp K_CUT        &kp K_PASTE
                            &none      &none      &none    &kp RET     &kp BSPC   &kp DELETE
             >;
 
