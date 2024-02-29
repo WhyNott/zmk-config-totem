@@ -212,12 +212,12 @@
             require-prior-idle-ms = <150>;
         };
 
-        minus_em_dash: minus_em_dash {
+        slash: slash {
             compatible = "zmk,behavior-hold-tap";
-            label = "MINUS_EM_DASH";
+            label = "SLASH";
             #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            bindings = <&em_dash>, <&kp>;
+            tapping-term-ms = <280>;
+            bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
         };
@@ -233,7 +233,7 @@
             bindings = <
        &kp W          &kp L              &kp Y               &kp P           &kp B          &kp Z        &kp F            &kp O                &kp U               &kp SINGLE_QUOTE
        &hmr_l LGUI C  &hmr_l LEFT_ALT R  &hmr_l LCTRL S      &hmr_l LSHFT T  &kp G          &kp M        &hmr_r RSHFT N   &hmr_r RCTRL E       &hmr_r RIGHT_ALT I  &hmr_r RGUI A
-&to 1  &kp Q          &kp J              &kp V               &kp D           &kp K          &kp X        &kp H            &hmr_r PERIOD COMMA  &kp PERIOD          &kp BACKSLASH     &kp SEMICOLON
+&to 1  &kp Q          &kp J              &kp V               &kp D           &kp K          &kp X        &kp H            &hmr_r PERIOD COMMA  &kp PERIOD          &hmr_r BACKSLASH SLASH  &kp SEMICOLON
                                          &caps_hold LSHFT 0  &lt 3 TAB       &lt 2 SPACE    &lt 4 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE
             >;
         };
@@ -250,10 +250,10 @@
 
         sym_type {
             bindings = <
-       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET        &kp ASTERISK     &kp RIGHT_BRACKET  &kp PERCENT
-       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &minus_em_dash 0 MINUS  &kp EXCLAMATION  &kp QUESTION       &kp COLON
-&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE               &kp UNDERSCORE   &kp AMPERSAND      &euro        &none
-                           &none      &none      &none        &kp SPACE    &kp BACKSPACE           &kp DELETE
+       &none     &none     &none      &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET  &kp PERCENT
+       &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp SPACE    &kp HASH     &slash 0 MINUS    &kp EXCLAMATION  &kp QUESTION       &kp COLON
+&none  &none     &none     &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &kp AMPERSAND      &euro        &none
+                           &none      &none      &none        &kp SPACE    &kp BACKSPACE     &kp DELETE
             >;
 
             label = "SYMT";
