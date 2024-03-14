@@ -40,7 +40,7 @@
         };
 
         shortcuts {
-            bindings = <&sl 5>;
+            bindings = <&sl 1>;
             key-positions = <12 13>;
         };
 
@@ -257,9 +257,20 @@
             bindings = <
        &hmr_l ESCAPE W  &kp L                        &kp Y               &kp P           &kp B          &kp Z        &kp F            &kp O                &kp U               &kp SINGLE_QUOTE
        &hmr_l LGUI C    &hmr_l_hold_pref LEFT_ALT R  &hmr_l LCTRL S      &hmr_l LSHFT T  &kp G          &kp M        &hmr_r RSHFT N   &hmr_r RCTRL E       &hmr_r RIGHT_ALT I  &hmr_r RGUI A
-&to 1  &kp Q            &kp J                        &kp V               &kp D           &kp K          &kp X        &kp H            &hmr_r PERIOD COMMA  &kp PERIOD          &hmr_r BACKSLASH SLASH  &kp SEMICOLON
-                                                     &caps_hold LSHFT 0  &lt 3 TAB       &lt 2 SPACE    &lt 4 ENTER  &lt 5 BACKSPACE  &lt 7 DELETE
+&to 2  &kp Q            &kp J                        &kp V               &kp D           &kp K          &kp X        &kp H            &hmr_r PERIOD COMMA  &kp PERIOD          &hmr_r BACKSLASH SLASH  &kp SEMICOLON
+                                                     &caps_hold LSHFT 0  &lt 4 TAB       &lt 3 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE  &lt 7 DELETE
             >;
+        };
+
+        shortcuts {
+            bindings = <
+       &kp LA(W)  &kp LS(LC(T))  &kp LC(W)  &kp LC(N)  &kp LC(U)        &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none     &none
+       &kp LC(Z)  &kp LC(R)      &kp LC(S)  &kp LC(T)  &kp LC(F)        &none  &sk RSHFT             &sk RCTRL             &sk RALT  &sk RGUI
+&none  &kp LC(A)  &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp LA(D)        &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none     &none     &none
+                                 &none      &none      &kp LA(LS(V))    &none  &none                 &none
+            >;
+
+            label = "shortcuts";
         };
 
         as_layer {
@@ -268,7 +279,7 @@
        &as W  &as L  &as Y               &as P      &as B          &as Z           &as F            &as O         &as U    &as APOSTROPHE
        &as C  &as R  &as S               &as T      &as G          &as M           &as N            &as E         &as I    &as A
 &to 0  &as Q  &as J  &as V               &as D      &as K          &as X           &as H            &as COMMA     &as DOT  &as FSLH        &as SEMICOLON
-                     &caps_hold LSHFT 0  &lt 3 TAB  &lt 2 SPACE    &repeat_mo 4 0  &lt 5 BACKSPACE  &lt 7 DELETE
+                     &caps_hold LSHFT 0  &lt 4 TAB  &lt 3 SPACE    &repeat_mo 5 0  &lt 1 BACKSPACE  &lt 7 DELETE
             >;
         };
 
@@ -303,17 +314,6 @@
             >;
 
             label = "SYMC";
-        };
-
-        shortcuts {
-            bindings = <
-       &kp LA(W)  &kp LS(LC(T))  &kp LC(W)  &kp LC(N)  &kp LC(U)        &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none     &none
-       &kp LC(Z)  &kp LC(R)      &kp LC(S)  &kp LC(T)  &kp LC(F)        &none  &sk RSHFT             &sk RCTRL             &sk RALT  &sk RGUI
-&none  &kp LC(A)  &kp LC(X)      &kp LC(C)  &kp LC(V)  &none            &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none     &none     &none
-                                 &none      &none      &kp LA(LS(V))    &none  &none                 &none
-            >;
-
-            label = "shortcuts";
         };
 
         numfunctions {
