@@ -68,11 +68,6 @@
             bindings = <&kp LC(V)>;
             key-positions = <2 3>;
         };
-
-        close {
-            bindings = <&kp LC(W)>;
-            key-positions = <1 0>;
-        };
     };
 
     macros {
