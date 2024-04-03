@@ -260,10 +260,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-       &hmr_l ESCAPE W    &kp L                        &kp Y               &kp P                          &kp B          &kp Z        &kp F                 &kp O               &kp U                    &kp SINGLE_QUOTE
-       &kp C              &kp R                        &kp S               &kp T                          &kp G          &kp M        &kp N                 &kp E               &kp I                    &kp A
-&to 2  &hmr_l LEFT_WIN Q  &hmr_l_hold_pref LEFT_ALT J  &hmr_l LCTRL V      &hmr_l_hold_pref LEFT_SHIFT D  &kp K          &kp X        &hmr_r RIGHT_SHIFT H  &hmr_r RCTRL COMMA  &hmr_r RIGHT_ALT PERIOD  &hmr_r BACKSLASH SLASH  &kp SEMICOLON
-                                                       &caps_hold LSHFT 0  &lt 4 TAB                      &lt 3 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE       &lt 7 DELETE
+       &hmr_l ESCAPE W    &kp L              &kp Y               &kp P                          &kp B          &kp Z        &kp F                 &kp O               &kp U                    &kp SINGLE_QUOTE
+       &kp C              &hmr_l LEFT_ALT R  &kp S               &kp T                          &kp G          &kp M        &kp N                 &kp E               &kp I                    &kp A
+&to 2  &hmr_l LEFT_WIN Q  &kp J              &hmr_l LCTRL V      &hmr_l_hold_pref LEFT_SHIFT D  &kp K          &kp X        &hmr_r RIGHT_SHIFT H  &hmr_r RCTRL COMMA  &hmr_r RIGHT_ALT PERIOD  &hmr_r BACKSLASH SLASH  &kp SEMICOLON
+                                             &caps_hold LSHFT 0  &lt 4 TAB                      &lt 3 SPACE    &lt 5 ENTER  &lt 1 BACKSPACE       &lt 7 DELETE
             >;
         };
 
